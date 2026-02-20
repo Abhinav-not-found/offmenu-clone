@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+@font-face {
+  font-family: MonotrealMed;
+  src: url("./assets/fonts/PPNeueMontreal-Medium.woff2");
+}
+@font-face {
+  font-family: MonotrealReg;
+  src: url("./assets/fonts/PPNeueMontreal-Regular.woff2");
+}
+
+:root {
+  --monotreal-medium: MonotrealMed;
+  --monotreal-regular: MonotrealReg;
+}
+.main {
+  height: 100%;
+  width: 98vw;
+  margin: auto;
+  margin-top: 10px;
+  /* background-color: rgba(255, 0, 0, 0.314); */
+}
+
+/* Global Components */
+.btn-black {
+  background-color: black;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 100px;
+  display: flex;
+  gap: 10px;
+}
+.btn-white {
+  background-color: white;
+  color: black;
+  padding: 14px 22px;
+  border-radius: 100px;
+  display: flex;
+  gap: 10px;
+}
+/* Navbar  */
+
+.navbar {
+  width: 28rem;
+  height: 4.5rem;
+  background-color: rgba(255, 255, 255, 0.476);
+  backdrop-filter: blur(12px);
+  border-radius: 100px;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0.6rem;
+  transition: all 0.4s;
+}
+.navbar .logo {
+  height: 100%;
+  width: fit-content;
+  font-size: 4rem;
+  font-weight: 900;
+  height: fit-content;
+  font-family: var(--monotreal-medium);
+}
+.navbar .menu {
+  width: 35px;
+  height: 12px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.navbar .btn {
+  width: fit-content;
+  height: 100%;
+  background-color: black;
+  color: white;
+  border-radius: 100px;
+  text-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 20px;
+}
+.navbar .btn i {
+  transition: all 0.4s;
+}
+
+/* Hero Section */
+.hero {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero-img {
+  width: 100%;
+  height: 85vh;
+  background-color: red;
+  border-radius: 2rem;
+  background-image: url("https://www.offmenu.design/videos/hero-video-poster.webp");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.hero-img h1 {
+  font-size: 60px;
+  line-height: 4rem;
+  color: white;
+  font-family: var(--monotreal-medium);
+}
+.hero-img h1:nth-child(2) {
+  color: rgba(255, 255, 255, 0.637);
+}
+.hero-img .btn-container {
+  display: flex;
+  gap: 15px;
+  padding: 4.8rem 0;
+}
+
+.marquee {
+  /* background-color: red; */
+  padding: 0 30px;
+  display: flex;
+  align-items: end;
+  gap: 40px;
+}
+.marquee p {
+  line-height: 1rem;
+  font-family: var(--monotreal-regular);
+  color: rgb(165, 164, 164);
+  font-weight: 100;
+  text-wrap: nowrap;
+}
+.marquee-container {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to right, white, transparent, white);
+  display: flex;
+}
