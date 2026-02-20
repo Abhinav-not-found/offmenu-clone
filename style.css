@@ -148,6 +148,112 @@ body {
 .marquee-container {
   width: 100%;
   height: 50px;
-  background: linear-gradient(to right, white, transparent, white);
+  /* background: linear-gradient(to right, white, transparent, white); */
   display: flex;
+  overflow: hidden;
+}
+
+/* About  */
+
+.about {
+  height: 100vh;
+  width: 100%;
+  /* background-color: green; */
+  margin-top: 10rem;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about h1 {
+  font-size: 90px;
+  line-height: 5rem;
+}
+.about h1:nth-child(2) {
+  color: rgb(182, 180, 180);
+}
+.about-bottom {
+  width: 100%;
+  height: 40%;
+  /* background-color: red; */
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.about-bottom .left {
+  width: 50%;
+  height: 100%;
+  /* background-color: red; */
+}
+.about-bottom .left p {
+  font-size: 20px;
+}
+.about-bottom .left p:nth-child(2) {
+  margin-top: 1rem;
+  color: gray;
+}
+.about-bottom .left .pricing {
+  margin-top: 3rem;
+  display: flex;
+  gap: 20px;
+}
+.about-bottom .left .pricing p {
+  font-size: 25px;
+  line-height: 1.8rem;
+}
+.about-bottom .left .pricing button {
+  display: flex;
+  align-items: center;
+}
+.about-bottom .right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.about-bottom .right .item {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  padding: 10px 0;
+  border-top: 1px solid lightgray;
+}
+
+/* Project  */
+
+.project {
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(255, 0, 0, 0.01);
+}
+.project .bg-text {
+  height: fit-content;
+  width: 100%;
+  font-size: 425px;
+  letter-spacing: -20px;
+  font-weight: 600;
+  background: linear-gradient(to bottom, rgb(222, 222, 222), white);
+  background-clip: text;
+  -webkit-background-clip: text; /* Required for Chrome/Safari */
+  color: transparent;
+  z-index: 0;
+}
+.bento{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 0, 0, 0.125);
+  margin-top: -12rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  gap: 10px;
+}
+#large{
+  grid-column: span 2;
+  background-color: green;
+}
+#medium{
+  grid-column: span 1;
+  background-color: yellow;
 }
