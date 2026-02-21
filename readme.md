@@ -1,0 +1,2 @@
+- navbar open animation using js
+- responsive

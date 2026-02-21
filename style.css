@@ -547,3 +547,203 @@ body {
   display: flex;
   gap: 20px;
 }
+
+
+/* Mobile View  */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    width: 95%;
+    height: 3.5rem;
+  }
+
+  .navbar .logo {
+    font-size: 2rem;
+  }
+
+  .navbar .btn {
+    display: none; /* hide CTA on small screens */
+  }
+
+  /* Hero */
+  .hero {
+    height: auto;
+    gap: 2rem;
+  }
+
+  .hero-img {
+    height: 70vh;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .hero-img h1 {
+    font-size: 28px;
+    line-height: 2rem;
+  }
+
+  /* Marquee */
+  .marquee {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  /* About */
+  .about {
+    margin-top: 5rem;
+    padding: 0 10px;
+  }
+
+  .about h1 {
+    font-size: 32px;
+    line-height: 2.2rem;
+  }
+
+  .about-bottom .left p {
+    font-size: 16px;
+  }
+
+  .about-bottom .left .pricing {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Projects */
+  .project .bg-text {
+    font-size: 90px;
+    letter-spacing: -4px;
+  }
+
+  .bento {
+    grid-template-columns: 1fr;
+  }
+
+  #large,
+  #medium,
+  #small {
+    grid-column: span 1;
+  }
+
+  .card {
+    height: 20rem;
+  }
+
+  .card .overlay .text {
+    font-size: 22px;
+  }
+
+  /* FAQ */
+  .faq .right h2 {
+    font-size: 32px;
+    line-height: 2rem;
+  }
+
+  .faq .right .container .item {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .footer h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    text-align: center;
+  }
+
+  .footer .bottom .large {
+    font-size: 5rem;
+    letter-spacing: -2px;
+  }
+
+  .footer .bottom .copyright {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Tablet View  */
+@media (max-width: 1024px) {
+
+  /* Navbar */
+  .navbar {
+    width: 90%;
+  }
+
+  /* Hero */
+  .hero-img h1 {
+    font-size: 42px;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  .hero-img .btn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* About */
+  .about {
+    height: auto;
+    gap: 4rem;
+  }
+
+  .about h1 {
+    font-size: 55px;
+    line-height: 3.5rem;
+  }
+
+  .about-bottom {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about-bottom .left,
+  .about-bottom .right {
+    width: 100%;
+  }
+
+  /* Projects */
+  .project .bg-text {
+    font-size: 180px;
+    letter-spacing: -8px;
+  }
+
+  .bento {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  #large,
+  #medium,
+  #small {
+    grid-column: span 2;
+  }
+
+  .card {
+    height: 24rem;
+  }
+
+  /* FAQ */
+  .faq {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .faq .left,
+  .faq .right {
+    width: 100%;
+  }
+
+  .faq .left .profile-card {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer .bottom .large {
+    font-size: 10rem;
+    letter-spacing: -8px;
+  }
+}
