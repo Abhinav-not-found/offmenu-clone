@@ -13,15 +13,25 @@
   </head>
   <body>
     <main class="main">
-      <header class="navbar group hover:shadow-xl">
-        <div class="logo">O/M</div>
+      <header
+        id="navbar"
+        class="navbar group hover:shadow-xl flex space-between"
+      >
+        <div>
+          <div class="logo">O/M</div>
 
-        <div class="menu group-hover:h-5"></div>
+          <div id="menu" class="menu group-hover:h-5"></div>
 
-        <button class="btn group">
-          <p>Book a Call</p>
-          <i class="ri-arrow-right-line group-hover:translate-x-1"></i>
-        </button>
+          <button id="btn" class="btn group">
+            <p>Book a Call</p>
+            <i class="ri-arrow-right-line group-hover:translate-x-1"></i>
+          </button>
+        </div>
+        <div id="hidden" class="hidden">
+          <p class="text-3xl">What we do</p>
+          <p class="text-3xl">Our Work</p>
+          <p class="text-3xl">Pricing</p>
+        </div>
       </header>
 
       <section class="hero">
@@ -295,5 +305,6 @@
         </div>
       </footer>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
