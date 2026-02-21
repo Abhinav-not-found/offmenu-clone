@@ -303,6 +303,100 @@ body {
   background-color: blue;
 }
 
+/* FAQ */
+.faq {
+  width: 100%;
+  height: 60vh;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.faq .left {
+  width: 50%;
+  height: 100vh;
+  /* background-color: red; */
+}
+.faq .left .profile-card {
+  width: 30rem;
+  height: 30rem;
+  background-color: rgb(224, 223, 223);
+  border-radius: 30px;
+  padding: 3rem;
+}
+.faq .left .profile-card .profile {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  background: radial-gradient(black, white);
+}
+.faq .left .profile-card .profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.faq .left h2 {
+  font-size: 50px;
+  margin-top: 1rem;
+}
+.faq .left p {
+  font-size: 20px;
+  color: gray;
+  /* margin-top: 1rem; */
+}
+.faq .left .btn-white {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.faq .left .profile-card .bottom {
+  width: 100%;
+  /* height: 100%; */
+  /* background-color: red; */
+  display: flex;
+  gap: 20px;
+}
+.faq .mail-container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 100%;
+}
+.faq .bottom div h3 {
+  color: gray;
+}
+.faq .bottom div p {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.faq .right {
+  width: 65%;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.faq .right h2 {
+  color: black;
+  font-size: 50px;
+  line-height: 3rem;
+}
+.faq .right h2 span {
+  color: rgb(172, 171, 171);
+}
+.faq .right .container {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+}
+.faq .right .container .item {
+  font-size: 20px;
+  padding: 10px 0;
+  /* background-color: red; */
+  border-top: 1px solid rgb(213, 211, 211);
+}
+
 /* Footer  */
 .footer {
   width: 100%;
@@ -375,7 +469,7 @@ body {
   letter-spacing: -20px;
 }
 
-.footer .bottom .copyright{
+.footer .bottom .copyright {
   margin-top: -5rem;
   color: black;
   display: flex;
@@ -383,10 +477,10 @@ body {
   padding: 0 1rem;
   font-size: 12px;
 }
-.footer .bottom .copyright p{
+.footer .bottom .copyright p {
   color: gray;
 }
-.footer .bottom .copyright div{
+.footer .bottom .copyright div {
   display: flex;
   gap: 20px;
 }
