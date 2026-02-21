@@ -163,10 +163,40 @@ body {
 }
 .marquee-container {
   width: 100%;
-  height: 50px;
-  /* background: linear-gradient(to right, white, transparent, white); */
-  display: flex;
+  height: 60px;
   overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: end;
+}
+.marquee-container .overlay{
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: red;
+  z-index: 5;
+  background: linear-gradient(to right,white,transparent,white);
+}
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: max-content;
+  animation: scroll 15s linear infinite;
+}
+
+.marquee-track img {
+  height: 60px;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 /* About  */
